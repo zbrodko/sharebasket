@@ -22,7 +22,7 @@
       </div>
       <div class="modal-footer flex-nowrap">
         <input class="form-control" type="text" id="short-url" placeholder="Короткая ссылка" readonly>
-        <button type="button" onclick="copyURL()" class="btn btn-primary">Скопировать</button>
+        <button type="button" onclick="copyURL()" data-dismiss="modal" class="btn btn-primary">Скопировать</button>
       </div>
     </div>
   </div>
