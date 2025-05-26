@@ -49,7 +49,7 @@ function saveHL($ids, $userID) {
     $request = $entity_data_class::getList(array(
        "select" => array("*"),
        "order" => array("ID" => "ASC"),
-       "filter" => array("UF_USER_ID"=>$userID)  // Задаем параметры фильтра выборки
+       "filter" => array("UF_USER_ID"=>$userID) 
     ))->fetch();
     
     if($request){

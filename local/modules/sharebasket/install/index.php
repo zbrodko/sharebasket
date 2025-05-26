@@ -106,8 +106,8 @@ class sharebasket extends CModule {
             true 
         );
         CopyDirFiles(
-            __DIR__ . '/files',
-            $_SERVER['DOCUMENT_ROOT'] . '/',
+            __DIR__ . '/share',
+            $_SERVER['DOCUMENT_ROOT'] . '/share',
             true, 
             true  
         );
@@ -120,8 +120,8 @@ class sharebasket extends CModule {
             );
         }
         DeleteDirFiles(
-            __DIR__ . '/files',
-            $_SERVER['DOCUMENT_ROOT'] . '/'
+            __DIR__ . '/share',
+            $_SERVER['DOCUMENT_ROOT'] . '/share'
         );
         return true;
     }

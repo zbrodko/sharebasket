@@ -22,12 +22,8 @@ function getShortUrl(){
     }); 
 }
 
-let url = document.getElementById('short-url').innerHTML;
-const copyURL = async () => {
-    try {
-      await navigator.clipboard.writeText(url);
-      console.log('Content copied to clipboard');
-    } catch (err) {
-      console.error('Failed to copy: ', err);
-    }
+function copyURL(){
+    let url = document.querySelector('#short-url').value;
+    navigator.clipboard.writeText(url);
 }
+ 
