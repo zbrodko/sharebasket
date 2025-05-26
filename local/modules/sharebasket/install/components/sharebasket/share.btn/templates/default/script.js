@@ -23,7 +23,9 @@ function getShortUrl(){
 }
 
 function copyURL(){
-    let url = document.querySelector('#short-url').value;
-    navigator.clipboard.writeText(url);
+    let url = document.querySelector('#short-url');
+    url.select();
+    document.execCommand('copy');
+    //navigator.clipboard.write('copy');
 }
  
